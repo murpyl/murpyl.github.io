@@ -1,0 +1,16 @@
+---
+layout: default
+title: BLOG
+---
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCCC">
+<th align="left">Date</th>
+<th align="left">Title</th>
+</tr>
+{% for post in site.posts %}
+<tr>
+<td>{{ post.date | date: "%Y-%m-%d" }}</td>
+<td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+</tr>
+{% endfor %}
+</table>

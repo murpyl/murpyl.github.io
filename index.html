@@ -1,6 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>coming soon.</h1>
-  </body>
-</html>
+---
+layout: default
+title: hello!!!
+---
+<center>
+<p>Hi, I'm <b>Lawrence</b>.</p>
+<p>I study electrical engineering and computer science :)</p>
+<p>I'm interested in AI safety (alignment and model internals), NLP, neurosymbolic AI</p>
+<p>About me: I like cats and chess, teaching and tennis, art history, language learning, and writing</p>
+<p>Contact: at murpyl on discord (maybe eventually i'll put an email)</p>
+<p><b>FUN FACT:</b> <span id="fact"></span></p>
+</center>
+ 
+<script>
+var facts = [
+  "My cat is named Rosie, adopted in 2021 at the age of 3",
+  "I have been playing tennis for 10+ years!",
+  "I did policy debate in high school",
+  "I have been getting into rhythm games",
+  "I have been getting into running long-distance (even though I say I hate it)",
+  "My family is from the Sichuan province of China",
+  "I do not like the rain."
+];
+document.getElementById("fact").textContent =
+  facts[Math.floor(Math.random() * facts.length)];
+</script>

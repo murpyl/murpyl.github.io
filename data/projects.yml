@@ -1,0 +1,10 @@
+# newest first, images, images/sample_img.png
+- title: Dorsal
+  url: https://dorsaledu.vercel.app/
+  description: EdTech to shorten lecture feedback loop between professors/students with live confusion radars, question aggregation, and help rooms (contact me if you want a demo!)
+  image: images/dorsal.png
+- title: EQUO
+  url: https://tryequo.com/
+  description: AI financial advisor, connects context with live markets, advised $80 million in assets
+  image: images/equo.png
+

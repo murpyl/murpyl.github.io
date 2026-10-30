@@ -2,17 +2,81 @@
 layout: default
 title: PROJECTS
 ---
+
+<style>
+  .zoomable-thumb {
+    cursor: zoom-in;
+    transition: opacity 0.2s;
+  }
+  .zoomable-thumb:hover {
+    opacity: 0.85;
+  }
+
+  #image-lightbox {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 90vw;
+    max-height: 90vh;
+    outline: none;
+  }
+  #image-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+  }
+  #image-lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 6px;
+    cursor: zoom-out;
+    margin: auto;
+  }
+</style>
+
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
-<tr bgcolor="#CCCCCC">
-<th align="left">Image</th>
-<th align="left">Project</th>
-<th align="left">Description</th>
-</tr>
-{% for p in site.data.projects %}
-<tr>
-<td width="160">{% if p.image %}<img src="{{ p.image | relative_url }}" alt="{{ p.title }}" width="150">{% endif %}</td>
-<td><b>{{ p.title }}</b></td>
-<td>{{ p.description }}</td>
-</tr>
-{% endfor %}
+  <tr bgcolor="#CCCCCC">
+    <th align="left">Image</th>
+    <th align="left">Project</th>
+    <th align="left">Description</th>
+  </tr>
+  {% for p in site.data.projects %}
+  <tr>
+    <td width="160" align="center">
+      {% if p.image %}
+        <img 
+          src="{{ p.image | relative_url }}" 
+          alt="{{ p.title }}" 
+          width="150" 
+          class="zoomable-thumb"
+          onclick="openLightbox(this.src, this.alt)"
+        >
+      {% endif %}
+    </td>
+    <td>
+      <b>
+        {% if p.url %}
+          <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>
+        {% else %}
+          {{ p.title }}
+        {% endif %}
+      </b>
+    </td>
+    <td>{{ p.description }}</td>
+  </tr>
+  {% endfor %}
 </table>
+
+<dialog id="image-lightbox" onclick="this.close()">
+  <img id="lightbox-img" src="" alt="">
+</dialog>
+
+<script>
+  function openLightbox(src, alt) {
+    const dialog = document.getElementById('image-lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    img.alt = alt;
+    dialog.showModal();
+  }
+</script>

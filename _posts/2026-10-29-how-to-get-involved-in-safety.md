@@ -10,7 +10,7 @@ Most people, however, are also not safety researchers, but still are concerned. 
 ## Currently
 Current AIS opportunities are also too high commitment, ranging from barrier to entry (require preexisting research or other reqs) or time (need to learn a lot of stuff really fast). As for the low-commitment work, of course, there is the classic "talk to your representative" or "having conversations," but many people tell me these feel not very substantive and seem rather weak in the face of existential risk. Additionally, most people don't want to talk about dying: I'd much rather talk about basketball or getting boba rather than the pessimistic "hey, we all might go extinct." So I will discuss other methods on how to "talk to other people" but more effectively.
 ## Change your mindset!
-<img src="./images/change-your-mindset.jpg" alt="Change Your Mindset" width="300">
+![Change Your Mindset](/images/change-your-mindset.jpg)
 
 I think a lot of people are on the side of some kind of skepticism about this being real ("it's just numbers and matrices and a better autocomplete") and helpless fatalism ("we're all going to die, and if we don't, we're all going to be homeless"). But what this does is that it traps you in a state of mind that prevents action. After all, an idiot in motion goes further than a genius at rest (not saying that you are an idiot). The end result for either is the same: nobody does anything, labs face zero accountability for pursuing aggressive improvement without caring about alignment. \
 \

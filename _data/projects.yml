@@ -7,4 +7,7 @@
   url: https://tryequo.com/
   description: AI financial advisor, connects context with live markets, advised $80 million in assets
   image: images/equo.png
-
+- title: Internal Tooling for Dualizer (YC F26)
+  url: https://dualizer.com/ 
+  description: Contracted work; agentic CRM and web scraper for Dualizer (YC F26)
+  image: images/dualizer.com-512x512.png

@@ -3,11 +3,15 @@
   url: https://dorsaledu.vercel.app/
   description: EdTech to shorten lecture feedback loop between professors/students with live confusion radars, question aggregation, and help rooms (contact me if you want a demo!)
   image: images/dorsal.png
-- title: EQUO
-  url: https://tryequo.com/
-  description: AI financial advisor, connects context with live markets, advised $80 million in assets
-  image: images/equo.png
 - title: Internal Tooling for Dualizer (YC F26)
   url: https://dualizer.com/ 
   description: Contracted work; agentic CRM and web scraper for Dualizer (YC F26)
   image: images/dualizer.com-512x512.png
+- title: Encoder-Decoder Transformer (no AI used)
+  url: https://github.com/murpyl/transformer-no-ai-used
+  description: A encoder-decoder transformer written without the help of generative AI
+- title: EQUO
+  url: https://tryequo.com/
+  description: AI financial advisor, connects context with live markets, advised $80 million in assets
+  image: images/equo.png
+

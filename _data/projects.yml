@@ -1,11 +1,19 @@
 # newest first, images, images/sample_img.png
+- title: NeuronBench
+  url: https://github.com/murpyl/NeuronBench
+  description: Benchmark on whether current LLMs can determine the impact of a neuron-level intervention on Qwen3-0.6B given the logit-lens output. We design two evals, one to see if models can guess which output came from steering the neuron rather than a random direction of similar size (eval "Which output is it?"), and one to determine whether a neuron's effect is real by beating 95% of random directions' vocabulary mass (eval "Real or null?").
+  image: images/headline.png
+- title: Rift Replay
+  url: https://wgao.dev/r/108r76ubts/
+  description: A non-commercial browser fan project that reads LoL replay files and plays the match back in 3D so you can watch at any camera angle, all without the game client or Riot API. Co-created with William Gao (link goes to his website!). Disclaimer; this project is not endorsed or sponsored by Riot, and all associated properties are trademarks of Riot Games, Inc
+  image: images/portfolio.jpg
 - title: Dorsal
   url: https://dorsaledu.vercel.app/
   description: EdTech to shorten lecture feedback loop between professors/students with live confusion radars, question aggregation, and help rooms (contact me if you want a demo!)
   image: images/dorsal.png
 - title: EQUO
   url: https://tryequo.com/
-  description: AI financial advisor, connects context with live markets, advised $80 million in assets
+  description: AI financial advisor, connects context with live markets, advised $80 million in assets (think Claude finance but ahead of its time)
   image: images/equo.png
 - title: Internal Tooling for Dualizer (YC F26)
   url: https://dualizer.com/ 
